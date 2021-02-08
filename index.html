@@ -90,6 +90,13 @@
             stagger: -0.05,
         });
     });
+    document.body.addEventListener("ontouchstart", e =>{
+        gsap.to(".circle", {
+            x: e.touches[0].clientX,
+            y: e.touches[0].clientY,
+            stagger: -0.05,
+        });
+    });
 </script>
 </body>
 </html>
