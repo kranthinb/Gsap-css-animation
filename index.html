@@ -92,8 +92,8 @@
     });
     document.body.addEventListener("ontouchstart", e =>{
         gsap.to(".circle", {
-            x: e.touches[0].clientX,
-            y: e.touches[0].clientY,
+            x: e.clientX,
+            y: e.clientY,
             stagger: -0.05,
         });
     });
