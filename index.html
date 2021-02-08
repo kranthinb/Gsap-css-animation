@@ -89,7 +89,14 @@
             y: e.clientY,
             stagger: -0.05,
         });
-    })
+    });
+    document.body.addEventListener("ontouchmove", e =>{
+        gsap.to(".circle", {
+            x: e.clientX,
+            y: e.clientY,
+            stagger: -0.05,
+        });
+    });
 </script>
 </body>
 </html>
